@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #41b3a3; width: 1481px;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black; width: 1481px;">
     <div class="container-fluid" style="transition-property: opacity, transform; font-family: &quot;Rubik_Doodle_Shadow variant0&quot;, Tofu; font-weight: 400; font-style: normal; font-stretch: normal; font-optical-sizing: auto; line-height: initial; opacity: 1; transition-duration: 350ms;">
       <a class="navbar-brand" href="#" > <img src="../assets/PHOTO.jpg" style="border-radius: 200px; " width="30px" height="30px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,16 +8,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link to="/" class="nav-link">Home</router-link>
+            <router-link to="/" class="nav-link" style="color: white;">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/login" class="nav-link">Projects</router-link>
+            <router-link to="/login" class="nav-link" style="color: white;">Projects</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/register" class="nav-link">Contact</router-link>
+            <router-link to="/register" class="nav-link" style="color: white;">Contact</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/register" class="nav-link"></router-link>
+            <router-link to="/register" class="nav-link" style="color: white;"></router-link>
           </li>
           
           
