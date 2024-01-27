@@ -1,14 +1,15 @@
 <template>
   <div>
-  <div style="display: flex;background-color: white;">
-    <div style="width: 1000px; justify-content: center; height: 60px; background-color: white;">
+  <div style="display: flex;background-color: white; ">
+    
+    <div style="width: 100%; justify-content: center; height: 60px; background-color: white;">
       <center style="background-color: white;">
       <div style="margin-top: 100px;background-color: white;"><spam style="font-family: Instrument Serif, serif; font-size: 20px;">PORTFOLIO</spam></div>
       <div style="margin-top: 50px;background-color: white;width: 530px;"><h1 class="typingeffect" style="font-family: Instrument Serif, serif; font-size: 80px; ">SHRIKANTH </h1></div>
         <div style="margin-top: 0px;background-color: white; width: 630px;"><h1 class="typingeffect2" style="font-family: Instrument Serif, serif; font-size: 80px;">VILVADRINATH</h1></div>
       </center>
       <div style="display: flex;">
-        <h5  class="fun" style="margin-top: 200px; margin-left: 20px;font-family: Instrument Serif, serif;">MACHINE LEARNING | PYTHON DEVELOPER</h5>
+        <h5  class="bio" style="margin-top: 200px; margin-left: 20px;font-family: Instrument Serif, serif;">MACHINE LEARNING | PYTHON DEVELOPER</h5>
         <button class="cta" style="margin-top: 190px; margin-left: 350px;">
         <span>Email Me</span>
         <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -19,12 +20,39 @@
 
         </div>
       </div>
-      <div  class="imageclass" style="background-color: black;width: 480px; height: 630px">
+      <div  class="imageclass" style="background-color: black;width: 480px; height: 630px; ">
         <img src="../assets/myphoto.jpg" width="480px" height="630px">
       </div>
   </div>
-  <div style="background-color: black; min-height: 700px;">
-    <div class="newclass">
+  <div style="background-color: black; min-height: 700px; " >
+    <div class="newcontainer" @@scroll.native="handleScroll">
+      <div style="position: relative; transform: translate(70px, 250px); ">
+        <svg class="svgcontainer" width="147" height="473" viewBox="0 0 147 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path path="path" d="M146 0C146 172.8 61.7623 263 24.9996 282C-11.7631 301 -6.00045 148 40.9996 193C87.9997 238 146 472 146 472" stroke="white" stroke-dasharray="1 1"/>
+</svg>
+
+
+</div>
+    </div>
+    <div class="newcontainer" @@scroll.native="handleScroll">
+      <div style="position: relative; transform: translate(110px, -210px);">
+        <svg class="svgcontainer2" width="147" height="473" viewBox="0 0 147 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="path2" d="M146 0C146 172.8 61.7623 263 24.9996 282C-11.7631 301 -6.00045 148 40.9996 193C87.9997 238 146 472 146 472" stroke="white" stroke-dasharray="1 1"/>
+</svg>
+
+
+</div>
+    </div>
+
+    <div class="newcontainer" @@scroll.native="handleScroll">
+      <div style="position: relative; transform: translate(150px, -200px); ">
+        <svg class="svgcontainer3" width="215" height="434" viewBox="0 0 215 434" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="path3" d="M214 5.00052C214 5.00052 -44.9997 63.0005 9.00029 5.00052C63.0003 -52.9995 66 474 9.00029 431C-47.9994 388 214 439 214 431" stroke="white" stroke-dasharray="1 1"/>
+</svg>
+
+</div>
+</div>
+    <div class="newclass" style="margin-top: -1490px;">
 
     <br><br>
     <div class="project" style="display: flex;">
@@ -40,11 +68,87 @@
     <br><br>
     <br><br>
     
-<button @click="toggleVisibility">Machine Learning</button>
-    <div v-if="clicked" class="animated-div">
-      <!-- Your animated content goes here -->
-    </div>
+<div><button class="button" data-text="Awesome" style="margin-left: 30px;">
+    <span class="actual-text">&nbsp;Machine&nbsp;Learning</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;Machine&nbsp;Learning&nbsp;&nbsp;&nbsp;</span>
+</button></div>
+<br><br>
+<div style="display: flex;">
 
+</div>
+<br>
+<div style="display: flex;">
+ 
+
+
+  <div class="sentiana" style="transform: translate(200px, 0px); width: 500px;">
+  <h1 style="color: white;margin-left: 30px;">Sentiment Analysis</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;"> In this project, we developed a powerful sentiment prediction system
+for movie reviews, employing state-of-the-art machine learning
+models and advanced text processing techniques. The goal was to
+accurately classify reviews as either positive or negative sentiments.
+Developed a sentiment analysis system for movie reviews using
+advanced text processing techniques, featuring SVM as the key
+model, Porter stemming, TF-IDF transformation, and meticulous data
+cleaning for optimal accuracy</p>
+
+
+  </div>
+  <div style="height: 100px; width: 200px;transform: translate(280px, 180px);">
+    <h1 style="color: white;" class="comma">,</h1>
+    </div>
+  <div class="sentiana" style="transform: translate(200px, 0px); width: 500px;">
+  <h1 style="color: white;margin-left: 30px;">Sentiment Analysis</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;"> In this project, we developed a powerful sentiment prediction system
+for movie reviews, employing state-of-the-art machine learning
+models and advanced text processing techniques. The goal was to
+accurately classify reviews as either positive or negative sentiments.
+Developed a sentiment analysis system for movie reviews using
+advanced text processing techniques, featuring SVM as the key
+model, Porter stemming, TF-IDF transformation, and meticulous data
+cleaning for optimal accuracy</p>
+
+
+  </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div><button class="button" data-text="Awesome" style="margin-left: 30px;">
+    <span class="actual-text">&nbsp;Internet&nbsp;Of&nbsp;Things</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;Internet&nbsp;Of&nbsp;Things&nbsp;&nbsp;</span>
+</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="sentiana" style="transform: translate(200px, 0px); width: 500px;">
+  <h1 style="color: white;margin-left: 30px;">Sentiment Analysis</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;"> In this project, we developed a powerful sentiment prediction system
+for movie reviews, employing state-of-the-art machine learning
+models and advanced text processing techniques. The goal was to
+accurately classify reviews as either positive or negative sentiments.
+Developed a sentiment analysis system for movie reviews using
+advanced text processing techniques, featuring SVM as the key
+model, Porter stemming, TF-IDF transformation, and meticulous data
+cleaning for optimal accuracy</p>
+
+
+  </div>
+<br>
+<br>
+<br>
+<br>
+
+<div><button class="button" data-text="Awesome" style="margin-left: 30px;">
+    <span class="actual-text">&nbsp;Full&nbsp;Stack</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;Full&nbsp;Stack&nbsp;&nbsp;&nbsp;</span>
+</button></div>
 
         <div>
           </div>
@@ -120,49 +224,181 @@ the ease to control it.
 </template>
 
 <script>
-import VueScrollTo from 'vue-scrollto';
 export default {
-  name: "HomeView",
-  data() {
-    return {
-      isVisible: false,
-      originalText: "SHRIK",
-      typedText: "",
-      intervalId: null,
-      clicked:  false,
-    
-    };
-    
-  }, 
+  name: 'HomeView',
   mounted() {
+    // Attach a scroll event listener to the window
+    window.addEventListener('scroll', this.scroll);
+    window.addEventListener('scroll', this.scroll2);
+    window.addEventListener('scroll', this.scroll3);
+    // Initial call to set up the SVG animation
+    this.scroll();
+    this.scroll2();
+    this.scroll3();
+  },
+  destroyed() {
+    // Remove the scroll event listener when the component is destroyed
+    window.removeEventListener('scroll', this.scroll);
+    window.removeEventListener('scroll', this.scroll2);
+    window.removeEventListener('scroll', this.scroll3);
   },
   methods: {
-        toggleVisibility() {
-          this.isVisible = !this.isVisible;
-          this.clicked = !this.clicked;
-        },
-       
-   
-},
+    scroll() {
+      // Your scroll logic goes here
+      const svg = document.querySelector("svg.svgcontainer");
+      const wow = svg.querySelector("path");
+      
+      // Calculate the distance scrolled
+      let dist = window.scrollY;
+      
+      // Set up the SVG animation
+      let pathlength = wow.getTotalLength();
+      wow.style.strokeDasharray = pathlength;
+      wow.style.strokeDashoffset = pathlength - dist ;
+    },
+    scroll2() {
+      // Your scroll logic goes here
+      const svg2 = document.querySelector("svg.svgcontainer2");
+      const wow2 = svg2.querySelector("#path2"); // Use the correct id selector
+      
+      // Calculate the distance scrolled
+      let dist2 = window.scrollY;
+      
+      // Set up the SVG animation
+      let pathlength2 = wow2.getTotalLength();
+      wow2.style.strokeDasharray = pathlength2;
+      wow2.style.strokeDashoffset = -(pathlength2 - dist2) ;
+    },
+    scroll3() {
+      // Your scroll logic goes here
+      const svg3 = document.querySelector("svg.svgcontainer3");
+      const wow3 = svg3.querySelector("#path3"); // Use the correct id selector
+      
+      // Calculate the distance scrolled
+      let dist3 = window.scrollY;
+      
+      // Set up the SVG animation
+      let pathlength3 = wow3.getTotalLength();
+      wow3.style.strokeDasharray = pathlength3;
+      wow3.style.strokeDashoffset = (pathlength3 - dist3) ;
+    }
+  }
 }
 </script>
 
 <style scoped>
-.animated-div {
-  width: 100px;
-  height: 100px;
-  background-color: #3498db; /* Adjust background color as needed */
-  animation: fadeIn 2s ease; /* Example animation, adjust as needed */
+
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.comma {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 100px;
+  font-style: normal;
 }
+
+.sentiana{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.sentiana:hover {
+  border: 2px solid gold;
+
+}
+.ohhello {
+  scale:  .8; opacity: 0;
+  animation: ohhello linear forwards;
+  animation-timeline: view();
+
+}
+
+@keyframes ohhello{
+  to {  opacity: 1;  }
+}
+
+.svg-container {
+/*   
+  overflow: hidden; */
+  height: 700px;
+  width: 700px; /* Set a fixed height for the container */
+  position: relative;
+  scroll-snap-type: y mandatory; /* Optional: enable scroll snapping for a smoother effect */
+}
+
+.svgcontainer2 {
+   margin-left: 1200px;
+   margin-bottom:100px;
+   transform: rotate(180deg);
+}
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
 .one1{
  animation: one1 4s infinite;
 
@@ -289,43 +525,8 @@ export default {
   }
 }
 
-.card {
 
- margin-left: 40px;
- width: 200px;
- height: 300px;
- border-radius: 20px;
- background: #F5F5DC;
- position: relative;
- padding: 1.8rem;
- border: 2px solid #c3c6ce;
- transition: 0.5s ease-out;
- overflow: visible;
-}
 
-.card-details {
- color: black;
- height: 100%;
- gap: .5em;
- display: grid;
- place-content: center;
-}
-
-.card-button {
- transform: translate(-50%, 125%);
- width: 60%;
- border-radius: 1rem;
- border: none;
- background-color: #008bf8;
- color: #fff;
- font-size: 1rem;
- padding: .5rem 1rem;
- position: absolute;
- left: 50%;
- bottom: 0;
- opacity: 0;
- transition: 0.3s ease-out;
-}
 
 .text-body {
  color: rgb(134, 134, 134);
@@ -338,15 +539,8 @@ export default {
 }
 
 /*Hover*/
-.card:hover {
- border-color: #008bf8;
- box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
 
-.card:hover .card-button {
- transform: translate(-50%, 50%);
- opacity: 1;
-}
+
 .cta {
   position: relative;
   margin: auto;
@@ -404,15 +598,6 @@ export default {
 .cta:active {
   transform: scale(0.95);
 }
-.container {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
-    linear-gradient(to right, #ebf8e100 10%, #c73030 10% 10.2%, #ebf8e100 10.5%);
-  background-size: 100% 30px, 100% 100%;
-  background-repeat: repeat, no-repeat;
-  /* Add your background pattern here */
-}
 
 .newclass {
   scale:  .8; opacity: 0;
@@ -437,6 +622,11 @@ export default {
   
 }
 
+
+
+.bio{
+  font-weight: bold;
+}
 
 
 </style>
