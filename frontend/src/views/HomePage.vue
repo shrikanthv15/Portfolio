@@ -1,16 +1,20 @@
 <template>
+  
   <div>
-  <div style="display: flex;background-color: white; ">
+    <head>
+      <title>{{ pageTitle }}</title>
+    </head>
+  <div style="display: flex;background-color: white;width: 100%; ">
     
     <div style="width: 100%; justify-content: center; height: 60px; background-color: white;">
       <center style="background-color: white;">
-      <div style="margin-top: 100px;background-color: white;"><spam style="font-family: Instrument Serif, serif; font-size: 20px;">PORTFOLIO</spam></div>
-      <div style="margin-top: 50px;background-color: white;width: 530px;"><h1 class="typingeffect" style="font-family: Instrument Serif, serif; font-size: 80px; ">SHRIKANTH </h1></div>
-        <div style="margin-top: 0px;background-color: white; width: 630px;"><h1 class="typingeffect2" style="font-family: Instrument Serif, serif; font-size: 80px;">VILVADRINATH</h1></div>
+      <div style="margin-top: 100px;background-color: white;"><spam class="port"  style="font-family: Instrument Serif, serif; font-size: 20px;">&nbsp; PORTFOLIO &nbsp;</spam></div>
+      <div style="margin-top: 50px;background-color: white;width: 50%;"><h1 class="typingeffect" style="font-family: Instrument Serif, serif; font-size: 80px; ">SHRIKANTH </h1></div>
+        <div style="margin-top: 0px;background-color: white; width: 60%;"><h1 class="typingeffect2" style="font-family: Instrument Serif, serif; font-size: 80px;">VILVADRINATH</h1></div>
       </center>
       <div style="display: flex;">
-        <h5  class="bio" style="margin-top: 200px; margin-left: 20px;font-family: Instrument Serif, serif;">MACHINE LEARNING | PYTHON DEVELOPER</h5>
-        <button class="cta" style="margin-top: 190px; margin-left: 350px;">
+        <h5  class="bio" style="margin-top: 150px; margin-left: 20px;font-family: Instrument Serif, serif;width: 45%;">MACHINE LEARNING | PYTHON DEVELOPER</h5>
+        <button class="cta" style="margin-top: 125px; margin-left: 350px;">
         <span>Email Me</span>
         <svg width="15px" height="10px" viewBox="0 0 13 10">
         <path d="M1,5 L11,5"></path>
@@ -20,11 +24,12 @@
 
         </div>
       </div>
-      <div  class="imageclass" style="background-color: black;width: 480px; height: 630px; ">
-        <img src="../assets/myphoto.jpg" width="480px" height="630px">
+      <div  class="imageclass" style="background-color: black;width: 40%; height: 50%; ">
+        <img src="../assets/myphoto.jpg" width="100%" height="100%">
       </div>
   </div>
   <div style="background-color: black; min-height: 700px; " >
+    
     <div class="newcontainer" @@scroll.native="handleScroll">
       <div style="position: relative; transform: translate(70px, 250px); ">
         <svg class="svgcontainer" width="147" height="473" viewBox="0 0 147 473" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,14 +50,15 @@
     </div>
 
     <div class="newcontainer" @@scroll.native="handleScroll">
-      <div style="position: relative; transform: translate(150px, -200px); ">
-        <svg class="svgcontainer3" width="215" height="434" viewBox="0 0 215 434" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="path3" d="M214 5.00052C214 5.00052 -44.9997 63.0005 9.00029 5.00052C63.0003 -52.9995 66 474 9.00029 431C-47.9994 388 214 439 214 431" stroke="white" stroke-dasharray="1 1"/>
+      <div style="position: relative; transform: translate(450px, -300px); ">
+        <svg class="svgcontainer3" width="318" height="324" viewBox="0 0 318 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="path3" d="M0 1H317V324" stroke="white" stroke-dasharray="1 1"/>
 </svg>
+
 
 </div>
 </div>
-    <div class="newclass" style="margin-top: -1490px;">
+    <div class="newclass" style="margin-top: -1390px;">
 
     <br><br>
     <div class="project" style="display: flex;">
@@ -98,15 +104,14 @@ cleaning for optimal accuracy</p>
     <h1 style="color: white;" class="comma">,</h1>
     </div>
   <div class="sentiana" style="transform: translate(200px, 0px); width: 500px;">
-  <h1 style="color: white;margin-left: 30px;">Sentiment Analysis</h1>
-  <p style="width: 400px; ;color: white;margin-left: 30px;"> In this project, we developed a powerful sentiment prediction system
-for movie reviews, employing state-of-the-art machine learning
-models and advanced text processing techniques. The goal was to
-accurately classify reviews as either positive or negative sentiments.
-Developed a sentiment analysis system for movie reviews using
-advanced text processing techniques, featuring SVM as the key
-model, Porter stemming, TF-IDF transformation, and meticulous data
-cleaning for optimal accuracy</p>
+  <h1 style="color: white;margin-left: 30px;">Movie Recommender</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;">
+In this project, we crafted a robust movie recommendation system leveraging cutting-edge machine learning 
+methodologies and sophisticated data processing techniques. Our primary objective was to provide users with 
+personalized movie suggestions based on their preferences. The system incorporates advanced collaborative filtering models, 
+content-based filtering, and hybrid recommendation approaches to enhance accuracy and diversity in movie recommendations. 
+Key components include matrix factorization, cosine similarity,combined with meticulous data preprocessing for optimal performance. 
+The resulting movie recommender system excels in delivering tailored suggestions, ensuring an enriching and enjoyable viewing experience for users.</p>
 
 
   </div>
@@ -126,21 +131,23 @@ cleaning for optimal accuracy</p>
 <br>
 <br>
 <br>
-<br>
 <div class="sentiana" style="transform: translate(200px, 0px); width: 500px;">
-  <h1 style="color: white;margin-left: 30px;">Sentiment Analysis</h1>
-  <p style="width: 400px; ;color: white;margin-left: 30px;"> In this project, we developed a powerful sentiment prediction system
-for movie reviews, employing state-of-the-art machine learning
-models and advanced text processing techniques. The goal was to
-accurately classify reviews as either positive or negative sentiments.
-Developed a sentiment analysis system for movie reviews using
-advanced text processing techniques, featuring SVM as the key
-model, Porter stemming, TF-IDF transformation, and meticulous data
-cleaning for optimal accuracy</p>
+  <h1 style="color: white;margin-left: 30px;">NAVIGATIONAL ROBOT</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;"> Embark on the development of an advanced autonomous
+navigational robot that combines servo motor control, machine
+learning-based object recognition using Convolutional Neural
+Networks (CNNs), and a Bluetooth-enabled browser app for userfriendly remote control. The project integrates FeatherS3
+microcontrollers, servo motors, a camera system, and ultrasound
+sensors to create a versatile robotic platform.
+An autonomous robot featuring Bluetooth-controlled servo motors,
+ultrasound sensors, and real-time object classification using
+Convolutional Neural Networks (CNNs) for versatile and precise
+navigation.</p>
 
 
   </div>
-<br>
+
+  <br>
 <br>
 <br>
 <br>
@@ -150,15 +157,57 @@ cleaning for optimal accuracy</p>
     <span aria-hidden="true" class="hover-text">&nbsp;Full&nbsp;Stack&nbsp;&nbsp;&nbsp;</span>
 </button></div>
 
+<br>
+<br>
+<div class="sentiana" style="transform: translate(200px, 0px); width: 500px;">
+  <h1 style="color: white;margin-left: 30px;">GROCEREZ</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;"> Embark on the development of an advanced autonomous
+navigational robot that combines servo motor control, machine
+learning-based object recognition using Convolutional Neural
+Networks (CNNs), and a Bluetooth-enabled browser app for userfriendly remote control. The project integrates FeatherS3
+microcontrollers, servo motors, a camera system, and ultrasound
+sensors to create a versatile robotic platform.
+An autonomous robot featuring Bluetooth-controlled servo motors,
+ultrasound sensors, and real-time object classification using
+Convolutional Neural Networks (CNNs) for versatile and precise
+navigation.</p>
+
+
+  </div>
+  <div style="display: flex;">
+    <div class="form-control" style="margin-left: 200px; background-color: black; width: 600px; height: 100px;">
+    <input type="value" required="">
+    <label>
+        <span style="transition-delay:0ms">F</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">e</span><span style="transition-delay:150ms">d</span><span style="transition-delay:200ms">b</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">c</span><span style="transition-delay:350ms">k</span>
+    </label>
+</div>
+  <div class="sentiana" style="transform: translate(100px, 0px); width: 500px;">
+  <h1 style="color: white;margin-left: 30px;">PORTFOLIO</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;"> Embark on the development of an advanced autonomous
+navigational robot that combines servo motor control, machine
+learning-based object recognition using Convolutional Neural
+Networks (CNNs), and a Bluetooth-enabled browser app for userfriendly remote control. The project integrates FeatherS3
+microcontrollers, servo motors, a camera system, and ultrasound
+sensors to create a versatile robotic platform.
+An autonomous robot featuring Bluetooth-controlled servo motors,
+ultrasound sensors, and real-time object classification using
+Convolutional Neural Networks (CNNs) for versatile and precise
+navigation.</p>
+
+<br><br>
+
+  </div>
+  
+</div>
         <div>
           </div>
 
   </div>
   </div>
 
-  <div style="background-color:#DCE9F5; height: 830px;">
+  <div style="background-color:white; height: 830px;">
     <br><br><br>
-    <div style="display: flex;" >
+    <div style="display: flex;" class="newclass">
       
       <div style="width: 700px;margin-left: 20px;" class="newclass">
         
@@ -192,40 +241,72 @@ commitment to a well-rounded education at the intersection of
 electronics engineering and cutting-edge data-driven technologies.
  </h5>
 
-          </div>
-          <div>
+</div>
+<div>
+
+
+             
           </div>
         </div>
-        <div style="background-color: beige; min-height: 700px;" >
+       
+        <div style="background-color: black; min-height: 700px;" >
           <div class="newclass">
-          <br><br>
-          <h3 style=" margin-left: 20px;font-family: Instrument Serif, serif;font-weight: bold;">INTERNSHIP</h3>
-          <br><br>
-          <h3 style=" margin-left: 20px;font-family: Instrument Serif, serif;">Python Developer</h3> 
-          <h7 style=" margin-left: 100px;font-family: Instrument Serif, serif; font-weight: bold;">Fractal31</h7> <br>
-          <h7 style=" margin-left: 100px;font-family: Instrument Serif, serif;">March, 2023 - Augest, 2023</h7> 
-          <br><br>
-          
-          <h5 style=" margin-left: 100px;font-family: Instrument Serif, serif;">Worked on GoDot, Blender and Python to make some interesting
-robotic simulation.<br> Used GoDot for simulations and making some
-virtual interface to connect with the robot.<br> Used Blender to make
-some equipment (Servomotors, Arms, Body, etc.) for the Robot.<br>
-Used Python as an interpreter, between the user and the robot for
-the ease to control it.
-          </h5>
+            <br>
+            <div class="internship" style="display: flex;">
+
+<h1 class="two1" style="margin-left: 30px;font-family: Instrument Serif, serif; color: white;">I</h1>
+<h1 class="two2" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">N</h1>
+<h1 class="two3" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">T</h1>
+<h1 class="two4" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">E</h1>
+<h1 class="two5" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">R</h1>
+<h1 class="two6" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">N</h1>
+<h1 class="two7" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">S</h1>
+<h1 class="two8" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">H</h1>
+<h1 class="two9" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">I</h1>
+<h1 class="two10" style="margin-left: 3px;font-family: Instrument Serif, serif; color: white;">P</h1>
+</div>
+            <div class="sentiana" style="transform: translate(0px, 0px); width: 500px;">
+
+  <h1 style="color: white;margin-left: 30px;">Sentiment Analysis</h1>
+  <p style="width: 400px; ;color: white;margin-left: 30px;"> In this project, we developed a powerful sentiment prediction system
+for movie reviews, employing state-of-the-art machine learning
+models and advanced text processing techniques. The goal was to
+accurately classify reviews as either positive or negative sentiments.
+Developed a sentiment analysis system for movie reviews using
+advanced text processing techniques, featuring SVM as the key
+model, Porter stemming, TF-IDF transformation, and meticulous data
+cleaning for optimal accuracy</p>
+
+
+  </div>
 </div>
           </div>
         
 </div>
+
 
     </div>
     
    
 </template>
 
+
+
+
 <script>
+
+
 export default {
   name: 'HomeView',
+  data() {
+    return {
+      pageTitle: "Shrikanth Vilvadrinath"
+    };
+  },
+  computed: {
+    
+    
+  },
   mounted() {
     // Attach a scroll event listener to the window
     window.addEventListener('scroll', this.scroll);
@@ -288,28 +369,113 @@ export default {
 
 <style scoped>
 
+.form-control {
+  position: relative;
+  margin: 240px 0 40px;
+  width: 290px;
+}
 
-@keyframes blob-bounce {
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+
+.internship{
+  color: white;
+}
+
+.two1 {
+  animation: two1 2s linear infinite;
+}
+.two2 {
+  animation: two1 2s 1s linear infinite;
+}
+
+.two3 {
+  animation: two1 2s 2s linear infinite;
+}
+
+.two4 {
+  animation: two1 2s 3s linear infinite;
+}
+
+.two5 {
+  animation: two1 2s 4s linear infinite;
+}
+.two6 {
+  animation: two1 2s 5s linear infinite;
+}
+
+.two7 {
+  animation: two1 2s 6s linear infinite;
+}
+
+.two8 {
+  animation: two1 2s 7s linear infinite;
+}
+
+.two9 {
+  animation: two1 2s 8s linear infinite;
+}
+
+.two10{
+  animation: two1 2s 9s linear infinite;
+}
+
+
+
+@keyframes two1 {
   0% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    transform: rotateZ(0deg);
   }
-
-  25% {
-    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-  }
-
   50% {
-    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    transform: rotateZ(-15deg);
   }
-
-  75% {
-    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-  }
-
   100% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    transform: rotateZ(-0deg);
   }
 }
+
+
+
+.port{
+  border:3px solid white;
+}
+
 
 .comma {
   font-family: "Noto Sans JP", sans-serif;
@@ -380,6 +546,7 @@ export default {
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
 /* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -391,6 +558,40 @@ export default {
   overflow: hidden;
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
+  animation: hover2 5s infinite;
+}
+
+@keyframes hover2 {
+  0%{
+    position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+  }
+  50%{
+    width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  100%{
+    position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+  }
+
+  
 }
 /* hover */
 .button:hover .hover-text {
